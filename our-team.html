@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team - DMI Finance</title>
+    <meta name="description" content="Meet the leadership and team members at DMI Finance.">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header will be loaded here -->
+    <div id="header-placeholder"></div>
+
+    <!-- Breadcrumbs -->
+    <section class="breadcrumbs">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="about.html">About Us</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Our Team</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Our Team Main Section -->
+    <section class="our-team-main">
+        <div class="container">
+            <h1>Our Team</h1>
+            <p>Meet the dedicated individuals who drive innovation and excellence at DMI Finance. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+            <!-- Add team member profiles here -->
+            <div class="row mt-4">
+                <div class="col-md-4 text-center">
+                    <img src="https://via.placeholder.com/150" alt="Team Member Name" class="rounded-circle mb-3">
+                    <h4>Team Member Name 1</h4>
+                    <p>Title/Role</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="https://via.placeholder.com/150" alt="Team Member Name" class="rounded-circle mb-3">
+                    <h4>Team Member Name 2</h4>
+                    <p>Title/Role</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="https://via.placeholder.com/150" alt="Team Member Name" class="rounded-circle mb-3">
+                    <h4>Team Member Name 3</h4>
+                    <p>Title/Role</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <!-- Add more team members as needed -->
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section-lighter-blue">
+        <div class="container">
+            <h2>Our Leadership Team</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+    </section>
+
+    <!-- Footer will be loaded here -->
+    <div id="footer-placeholder"></div>
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Function to load HTML content
+        function loadHTML(url, id) {
+            fetch(url)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(id).innerHTML = data;
+                })
+                .catch(error => {
+                    console.error('Error loading HTML:', error);
+                });
+        }
+
+        // Load header and footer
+        loadHTML('header.html', 'header-placeholder');
+        loadHTML('footer.html', 'footer-placeholder');
+    </script>
+</body>
+</html> 

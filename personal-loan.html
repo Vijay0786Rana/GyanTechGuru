@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Loan - DMI Finance</title>
+    <meta name="description" content="Apply for a personal loan with DMI Finance. Learn about eligibility, interest rates, and how to apply.">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header will be loaded here -->
+    <div id="header-placeholder"></div>
+
+    <!-- Breadcrumbs -->
+    <section class="breadcrumbs">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="our-products.html">Our Products</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Personal Loan</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Personal Loan Main Section -->
+    <section class="personal-loan-main">
+        <div class="container">
+            <h1>Personal Loan</h1>
+            <p>Get the financial support you need with a DMI Finance Personal Loan. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+            <!-- Add specific content about Personal Loans here -->
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <h2>Features and Benefits</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <ul>
+                        <li>Feature 1: Lorem ipsum dolor sit amet.</li>
+                        <li>Feature 2: Consectetur adipiscing elit.</li>
+                        <li>Feature 3: Sed do eiusmod tempor incididunt.</li>
+                         <li>Feature 4: Ut enim ad minim veniam.</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h2>Eligibility</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+            </div>
+
+            <div class="mt-4">
+                <h2>How to Apply</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                 <a href="contact.html" class="btn btn-primary">Contact Us to Apply</a>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section-lighter-blue">
+        <div class="container">
+            <h2>Why Choose Our Personal Loan?</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+    </section>
+
+    <!-- Footer will be loaded here -->
+    <div id="footer-placeholder"></div>
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Function to load HTML content
+        function loadHTML(url, id) {
+            fetch(url)
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById(id).innerHTML = data;
+                })
+                .catch(error => {
+                    console.error('Error loading HTML:', error);
+                });
+        }
+
+        // Load header and footer
+        loadHTML('header.html', 'header-placeholder');
+        loadHTML('footer.html', 'footer-placeholder');
+    </script>
+</body>
+</html> 
